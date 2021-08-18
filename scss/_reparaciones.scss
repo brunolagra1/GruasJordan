@@ -1,0 +1,122 @@
+/*---Reparaciones---*/
+/*---Estructuras---*/
+/*---Variables---*/
+
+$ColumnasHome: repeat(5, auto);
+
+#ContainerRep{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: $ColumnasHome;
+    grid-gap:1rem;
+    grid-template-areas:
+     "box1R"  
+     "box2R" 
+     "box3R"
+     "box4R"
+     "box5R";
+}
+.box1R {
+    grid-area: box1R;
+    justify-self: center;
+    }
+.box2R {
+    grid-area: box2R;
+    }
+.box3R {
+    grid-area: box3R;
+    justify-self: center;
+    }
+.box4R {
+    grid-area: box4R;
+    display: grid;
+    justify-content: center;
+    }
+.box5R {
+    grid-area: box5R;
+}
+
+/*---Movil---*/
+
+
+@media only screen and (max-width: 320px) {
+    #ContainerRep {
+        display: grid;
+        grid-template-columns: 320px;
+        grid-template-rows: $ColumnasHome;
+        grid-gap:1rem;
+        justify-content: center;
+        grid-template-areas:
+         "box1R"  
+         "box2R" 
+         "box3R"
+         "box4R"
+         "box5R";
+    }
+    .box1R {
+        grid-area: box1R;
+        }
+    .box2R {
+        grid-area: box2R;
+        }
+    .box3R {
+        grid-area: box3R;
+        }
+    .box4R {
+        grid-area: box4R;
+        }
+    .box5R {
+        grid-area: box5R;
+    }
+}
+
+/*---Titulo---*/
+
+.titulo__reparaciones { font-size: 30px;
+    font-style: inherit;
+    color: darkred;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    letter-spacing: 5.5px;
+    position: relative;
+    top: auto;
+    right: auto;
+    margin-top: 10px;
+}
+
+/*---Texto---*/
+
+.texto__rep { font-size: 30px;
+    color: rgb(87, 83, 83);
+    font-style: normal;
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    text-transform: initial;
+    letter-spacing: 4px;
+    word-spacing: 4.5px;
+}
+
+/*---Formulario---*/
+
+.FormularioReparaciones {
+    display: grid;
+    justify-content: center;
+}
+.Label {
+    color: white;
+    font-size: 20px;
+}
+
+/*---Footer---*/
+
+.FooterRep {
+    height: auto;
+    width: auto;
+    margin: 20px;
+    padding: 5px 8px 5px 8px;
+    transform: skewX(20deg);
+}

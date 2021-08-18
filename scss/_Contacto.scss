@@ -1,0 +1,104 @@
+/*---Contacto---*/
+
+/*---Estructuras---*/
+
+/*---Variables---*/
+
+$ColumnasHome: repeat(5, auto);
+
+
+#ContainerHome {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: $ColumnasHome;
+    grid-gap:1rem;
+    grid-template-areas:
+     "box1C"  
+     "box2C" 
+     "box3C"
+     "FormularioContacto"
+     "box4C";
+}
+.box1C {
+    grid-area: box1;
+    justify-self: center;
+    }
+.box2C {
+    grid-area: box2;
+    }
+.box3C {
+    grid-area: box3;
+    justify-self: center;
+    }
+.FormularioContacto {
+    grid-area: box4;
+    display: grid;
+    justify-content: center;
+    }
+.box4C {
+    grid-area: box5;
+}
+
+/*---Movil---*/
+
+
+@media only screen and (max-width: 320px) {
+    #ContainerHome {
+        display: grid;
+        grid-template-columns: 320px;
+        grid-template-rows: $ColumnasHome;
+        grid-gap:1rem;
+        justify-content: center;
+        grid-template-areas:
+         "box1C"  
+         "box2C" 
+         "box3C"
+         "FormularioContacto"
+         "box4C";
+    }
+    .box1C {
+        grid-area: box1;
+        }
+    .box2C {
+        grid-area: box2;
+        }
+    .box3C {
+        grid-area: box3;
+        }
+    .FormularioContacto {
+        grid-area: box4;
+        }
+    .box4C {
+        grid-area: box5;
+    }
+}
+/*---Titulo---*/
+
+/*---Variables---*/
+
+$FuenteTitulo: 30px/inherit/bold/Arial, Helvetica, sans-serif;
+$TextAlig: center;
+$TextTransf: uppercase;
+$TextDeco: underline;
+$EspLetra: 5.5px;
+
+.titulo__contacto {
+    font: $FuenteTitulo; 
+    color: peru;
+    text-align: $TextAlig;
+    text-transform: $TextTransf;
+    text-decoration: $TextDeco;
+    letter-spacing: $EspLetra;
+    margin-top: 10px;
+}
+
+/*---Formulario---*/
+
+.Label {
+    color: white;
+    font-size: 20px;
+}
+.FormularioContacto {
+    display: grid;
+    justify-content: center;
+}

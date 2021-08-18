@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Bruno">
+    <meta name="description" content="En esta sección encontrará nuestro formulario para contactarnos">
+    <meta name="keywords" content="Contacto, Formulario, Atencion">
+    <link rel="stylesheet" href="css/Estilos.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> <!-- CDN de Bootstrap del CSS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> <!-- CDN de Bootstrap del JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script><!-- CDN de la librería de Jquery  -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script> <!-- CDN de la librería de Popper  -->
+    <title>Contacto Jordan</title>
+</head>
+<body class="BodyWeb">
+    <div id="ContainerContacto">
+    <header>
+        <div class="box1C">
+        <img src="imagenes/logo.png" alt="Logo Jordan" class="Logo">
+        </div>
+    <nav class="menu">
+        <div class="box2C">
+        <div class="Links">
+            <p class="item1"><a class="item" href="index.html">Inicio</a></p>  
+            <p class="item2"><a class="item" href="SobreNosotros.html">Sobre Nosotros</a></p>
+            <p class="item3"><a class="item" href="Productos.html">Productos</a></p>   
+            <p class="item4"><a class="item" href="Reparaciones.html">Reparaciones</a></p>
+            <p class="item5"><a class="item" href="Contacto.html">Contacto</a></p>
+        </div> 
+        </div>
+    </nav>
+    </header>
+    <main>
+    <section>
+        <div class="box3C">
+        <article>
+            <h1 class="titulo__contacto">Formulario de contacto</h1>
+        </article>
+        </div>
+        <article>
+            <div class="FormularioContacto">
+            <form action="" method="GET">
+                <div>
+                <label for="" class="Label">Nombre y apellido :</label>
+                <input type="text" name="nombre">
+                </div>
+                <br>
+                <div>
+                    <label for="usermail" class="Label">Correo electrónico :</label>
+                    <input type="email" name="usermail" id="usermail" required>
+                </div>
+                <br>
+                <div>
+                    <label for="" class="Label">Teléfono celular :</label>
+                    <input type="text" placeholder="No agregue el 0 ni el 15">
+                </div>
+                <br>
+                <div>
+                    <label for="" class="Label">Motivo de su consulta :</label>
+                    <select name="Motivo" id="">
+                        <option value="Reparación">Reparación</option>
+                        <option value="Grúa">Grúa</option>
+                        <option value="Garra">Garra</option>
+                        <option value="Presupuesto">Presupuesto</option>
+                        <option value="Varios">Varios</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="" class="Label">¿Le gustaría coordinar una visita a la empresa?</label>
+                    <input type="checkbox" name="acepta" value="1">
+                </div>
+                <br>
+                <div>
+                    <textarea name="Comentario" id="" cols="30" rows="10" placeholder="Agregue un comentario"></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Enviar formulario">
+                    <input type="reset" value="Limpiar formulario">
+                </div>
+            </form>
+        </div>
+        </article>
+    </section>
+    </main>
+    <footer class="footer">
+        <div class="box4C">
+        <div class="textoFooter">
+        <p><em>Equipos forestales Jordan<br>Datos de contacto : 3757 433490</em></p>
+        </div>
+        </div>
+    </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,176 @@
+/*---Index---*/
+
+/*---Variables---*/
+
+$ColumnasHome: repeat(5, auto);
+
+/*---Estructuras---*/
+
+#ContainerHome {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: $ColumnasHome;
+    grid-gap:1rem;
+    grid-template-areas:
+     "box1"  
+     "box2" 
+     "box3"
+     "box4"
+     "box5";
+}
+.box1 {
+    grid-area: box1;
+    justify-self: center;
+    }
+.box2 {
+    grid-area: box2;
+    }
+.box3 {
+    grid-area: box3;
+    justify-self: center;
+    }
+.box4 {
+    grid-area: box4;
+    display: grid;
+    justify-content: center;
+    }
+.box5 {
+    grid-area: box5;
+}
+
+/*---Movil---*/
+
+
+@media only screen and (max-width: 320px) {
+    #ContainerHome {
+        display: grid;
+        grid-template-columns: 320px;
+        grid-template-rows: $ColumnasHome;
+        grid-gap:1rem;
+        justify-content: center;
+        grid-template-areas:
+         "box1"  
+         "box2" 
+         "box3"
+         "box4"
+         "box5";
+    }
+    .box1 {
+        grid-area: box1;
+        }
+    .box2 {
+        grid-area: box2;
+        }
+    .box3 {
+        grid-area: box3;
+        }
+    .box4 {
+        grid-area: box4;
+        }
+    .box5 {
+        grid-area: box5;
+    }
+}
+
+/*---Tablet---*/
+ 
+ @media only screen and (min-width: 768px) {
+    .ContainerHome {
+        display: grid;
+        justify-content: center;
+        grid-template-rows: $ColumnasHome;
+    
+        }
+        .box1 {
+          grid-row: 1 / 5;
+        }
+        .box2 {
+          grid-row: 2 / 5;
+        }
+        .box3 {
+          grid-row: 3 / 5;
+        }
+       
+        .box4 {
+          grid-row: 4 / 5;
+        }
+        .box5 {
+            grid-row: 5/5;
+        }
+    }
+    
+/*---Desktop---*/
+    
+@media only screen and (min-width: 1024px) {
+    .ContainerHome {
+        display: grid;
+        justify-content: center;
+        grid-template-rows: $ColumnasHome;
+    }
+        .box1 {
+            grid-row: 1 / 5;
+        }
+        .box2 {
+            grid-row: 2 / 5;
+        }
+        .box3 {
+            grid-row: 3 / 5;
+        }
+         
+        .box4 {
+            grid-row: 4 / 5;
+        }
+       
+        .box5 {
+            grid-row: 5 / 5;
+        }
+}
+
+/*---Titulo---*/
+
+.titulo__inicio { font-size: 30px;
+    font-style: inherit;
+    color: darkred;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    letter-spacing: 5.5px;
+    position: relative;
+    top: auto;
+    right: auto;
+    margin-top: 10px;
+}
+/*---Texto---*/
+
+.texto__inicio {  
+    font-size: 30px;
+    font-style: italic;
+    color: rgb(87, 83, 83);
+    font-weight: unset;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: initial;
+    line-height: 1.2;
+    letter-spacing: 4px;
+    word-spacing: 5px;
+    text-align: center;
+}
+
+/*---Foto--*/
+
+.grua__inicio {
+    width: 80%;
+    height: auto;
+    justify-self: center;
+}
+
+/*---Footer---*/
+
+.FooterInicio {
+    height: auto;
+    width: auto;
+    margin: 20px;
+    padding: 5px 8px 5px 8px;
+    transform: skewX(20deg);
+}

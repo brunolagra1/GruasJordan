@@ -1,0 +1,107 @@
+/*---Generales---*/
+
+/*---Variables---*/
+
+$FuenteGeneral: auto;
+html {
+    font: $FuenteGeneral;
+}
+.BodyWeb{
+    background-color: wheat;
+    background-repeat: repeat;
+    background-position: initial;
+    background-image: url("https://thumbs.dreamstime.com/b/fondo-de-papel-en-ruinas-color-verde-claro-suave-para-tu-tarjeta-saludo-textura-sin-inconvenientes-arruinado-el-%C3%A1nimo-creativo-198628225.jpg");
+}
+
+/*---Menu---*/
+
+.menu { 
+    font: $FuenteGeneral;
+    color: grey;
+}
+
+/*---Barra de navegacion---*/
+
+.Links {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: 100%;
+    grid-gap:1rem;
+    justify-items: center;
+    background-color: rgb(64, 105, 116);
+    width: 100%;
+    height: auto;
+}
+.item {
+    padding: 10px 20px;
+    font-size: 2rem;
+    font-weight: 300;
+    color: rgb(14, 230, 96);
+    align-items: center;
+}
+
+
+/*---Logo---*/
+
+.Logo {
+    height: auto;
+    width: 100%;
+}
+
+/*---FooterGeneral---*/
+
+/*---VariablesFooter---*/
+
+$FuenteFooter: 15px/unset/bold/Georgia, 'Times New Roman', Times, serif;
+
+
+.footer {
+    margin-top: 15px;
+    height: auto;
+    width: 100%;
+    background-color: rgb(39, 226, 139);
+    align-items: center;
+}
+.textoFooter {
+    transform: skewX(20deg);
+    font: $FuenteFooter;
+    color: rgb(242, 246, 7);
+    text-transform: initial;
+    letter-spacing: 1.3px;
+    word-spacing: normal;
+    margin-left: 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+   }
+
+@media only screen and (max-width: 320px) {
+    .Links {
+        display: grid;
+        grid-template-columns: 320px;
+        grid-template-rows: repeat(5, auto);
+        grid-gap:1rem;
+        justify-content: center;
+        grid-template-areas:
+         "item1"  
+         "item2" 
+         "item3"
+         "item4"
+         "item5";
+    }
+    .item1 {
+        grid-area:item1;
+        }
+    .item2 {
+        grid-area: item2;
+        }
+    .item3 {
+        grid-area: item3;
+        }
+    .item4 {
+        grid-area: item4;
+        }
+    .item5 {
+        grid-area: item5;
+    }
+      
+}
