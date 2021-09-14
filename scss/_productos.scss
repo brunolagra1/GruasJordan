@@ -93,6 +93,54 @@ $ColumnasPr: repeat(9, auto);
     .box9Pr {
         grid-area: box9Pr;
     }
+    @media only screen and (max-width: 320px) {  
+        .box5Pr {
+            display: grid;
+            grid-template-columns: 320px;
+            grid-template-rows: auto;
+            grid-gap:1rem;
+            justify-content: center;
+            grid-template-areas:
+             "foto__grua--500"  
+             "Art1500" 
+             "Art2500"
+             "Art3500"
+             "Art4500"
+             "Art5500"
+             "Art6500"
+             "Art7500"
+             "Art8500";
+        }
+        .foto__grua--500 {
+            grid-area: foto__grua--500;
+            }
+        .Art1500 {
+            grid-area: Art1500;
+            }
+        .Art2500 {
+            grid-area: Art2500;
+            }
+        .Art3500 {
+            grid-area: Art3500;
+            }
+        .Art4500 {
+            grid-area: Art4500;
+        }
+        .Art5500 {
+            grid-area: Art5500;
+        }
+        .Art6500 {
+            grid-area: Art6500;
+        }
+        .Art7500 {
+            grid-area: Art7500;
+        }
+        .Art8500 {
+            grid-area: Art8500;
+        }
+        .Art9500 {
+            grid-area: Art9500;
+        }
     .gruas__container {
         display: grid;
         grid-template-columns: 320px;
@@ -203,8 +251,8 @@ $ColumnasPr: repeat(9, auto);
 .foto__grua--700 {
     height: 500px;
     width: 500px;
-}
+}  
 .foto__grua--1200 {
-    height: 350px;
-    width: 500px;
+    height: 500px;
+    width: 350px;
 }
